@@ -2,8 +2,8 @@
 <h2>Team Motto: <%= @params[:team][:motto] %></h2><br>
 
 <% @params[:team][:members].each do |member| %>
-    <h2>Hero Name: member[]</h2>
-    <p>Name: <%= ship.name %></p><br>
+    <h2>Hero Name: <%= member[:name] %></h2>
+    <p>Hero Power: <%= ship.name %></p><br>
     <p>Type: <%= ship.type %></p><br>
     <p>Booty: <%= ship.booty %></p><br>
   <br>
