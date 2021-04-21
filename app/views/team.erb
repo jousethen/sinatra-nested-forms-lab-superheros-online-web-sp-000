@@ -3,10 +3,8 @@
 
 <% @params[:team][:members].each do |member| %>
     <h2>Hero Name: <%= member[:name] %></h2>
-    <p>Hero Power: <%= ship.name %></p><br>
-    <p>Type: <%= ship.type %></p><br>
-    <p>Booty: <%= ship.booty %></p><br>
-  <br>
+    <p>Hero Power: <%= member[:power] %></p><br>
+    <p>Hero bio: <%= member[:bio] %></p><br>
 <% end %>
 
 
